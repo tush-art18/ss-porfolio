@@ -379,12 +379,9 @@ export default function App() {
             <div className="pe-grid">
               {/* Card 1 — Portfolio */}
               <div className="pe-card pe-card-wide reveal-scale" style={{ '--delay': 0 }}>
-                <div 
-                  className="pe-card-color" 
-                  style={{ 
-                    backgroundImage: 'linear-gradient(to bottom, rgba(8, 8, 16, 0.2), rgba(8, 8, 16, 0.85)), url("https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80")'
-                  }}
-                >
+                <div className="pe-card-color">
+                  <div className="pe-card-bg-img" style={{ backgroundImage: 'url("/portfolio.png")', backgroundPosition: 'center' }} />
+                  <div className="pe-card-overlay" />
                   <span className="pe-card-num">01</span>
                   <div className="pe-card-tags-tl">
                     <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
@@ -393,18 +390,14 @@ export default function App() {
                 <div className="pe-card-info">
                   <h3 className="pe-card-title">Portfolio Website</h3>
                   <p className="pe-card-desc">Personal brand site built entirely from scratch — layout, identity, animations. This one.</p>
-                  <span className="pe-card-link">View project <ArrowUpRight size={13} /></span>
                 </div>
               </div>
 
               {/* Card 2 — Salon */}
               <div className="pe-card reveal-scale" style={{ '--delay': 80 }}>
-                <div 
-                  className="pe-card-color" 
-                  style={{ 
-                    backgroundImage: 'linear-gradient(to bottom, rgba(8, 8, 16, 0.2), rgba(8, 8, 16, 0.85)), url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80")'
-                  }}
-                >
+                <div className="pe-card-color">
+                  <div className="pe-card-bg-img" style={{ backgroundImage: 'url("/salon.jpg")', backgroundPosition: 'center' }} />
+                  <div className="pe-card-overlay" />
                   <span className="pe-card-num">02</span>
                   <div className="pe-card-tags-tl">
                     <span>Java</span><span>JSP</span><span>MySQL</span>
@@ -413,18 +406,14 @@ export default function App() {
                 <div className="pe-card-info">
                   <h3 className="pe-card-title">Salon Management</h3>
                   <p className="pe-card-desc">Full booking system — client tracking, appointments, real-time staff scheduling.</p>
-                  <span className="pe-card-link">View project <ArrowUpRight size={13} /></span>
                 </div>
               </div>
 
               {/* Card 3 — Employee */}
               <div className="pe-card reveal-scale" style={{ '--delay': 160 }}>
-                <div 
-                  className="pe-card-color" 
-                  style={{ 
-                    backgroundImage: 'linear-gradient(to bottom, rgba(8, 8, 16, 0.2), rgba(8, 8, 16, 0.85)), url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80")'
-                  }}
-                >
+                <div className="pe-card-color">
+                  <div className="pe-card-bg-img" style={{ backgroundImage: 'url("/bg3.jpeg")' }} />
+                  <div className="pe-card-overlay" />
                   <span className="pe-card-num">03</span>
                   <div className="pe-card-tags-tl">
                     <span>Angular</span><span>Node.js</span><span>MongoDB</span>
@@ -433,18 +422,14 @@ export default function App() {
                 <div className="pe-card-info">
                   <h3 className="pe-card-title">Employee System</h3>
                   <p className="pe-card-desc">Role-based access control, employee record management — complete MEAN stack implementation.</p>
-                  <span className="pe-card-link">View project <ArrowUpRight size={13} /></span>
                 </div>
               </div>
 
               {/* Card 4 — Design */}
               <div className="pe-card pe-card-wide reveal-scale" style={{ '--delay': 240 }}>
-                <div 
-                  className="pe-card-color" 
-                  style={{ 
-                    backgroundImage: 'linear-gradient(to bottom, rgba(8, 8, 16, 0.2), rgba(8, 8, 16, 0.85)), url("https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80")'
-                  }}
-                >
+                <div className="pe-card-color">
+                  <div className="pe-card-bg-img" style={{ backgroundImage: 'url("/bg4.jpg")' }} />
+                  <div className="pe-card-overlay" />
                   <span className="pe-card-num">04</span>
                   <div className="pe-card-tags-tl">
                     <span>Figma</span><span>Photoshop</span><span>Blender</span>
@@ -453,7 +438,6 @@ export default function App() {
                 <div className="pe-card-info">
                   <h3 className="pe-card-title">UI/UX & Web Mockups</h3>
                   <p className="pe-card-desc">High-fidelity design systems, 3D assets, and component libraries delivered for client projects.</p>
-                  <span className="pe-card-link">View project <ArrowUpRight size={13} /></span>
                 </div>
               </div>
             </div>
@@ -549,7 +533,7 @@ export default function App() {
             <span className="flt-name-separator"> · </span>
             <span className="flt-name-shikalgar">Shikalgar</span>
           </div>
-          <div className="flt-display-role">Full-Stack Engineer &amp; Designer</div>
+          <div className="flt-display-role">Full-Stack Developer &amp; Designer</div>
           
           {/* Spotlight contacts links */}
           <div className="flt-contacts-spotlight">
