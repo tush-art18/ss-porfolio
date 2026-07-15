@@ -83,7 +83,7 @@ export default function App() {
       <div className="nav-pill-container">
         <header className={`nav-pillbar ${navScrolled ? 'scrolled' : ''} ${navHidden ? 'hidden' : ''} ${mobileMenuOpen ? 'menu-open' : ''}`}>
           <div className="nav-group-left desktop-only">
-            <a href="#about" className="nav-link-item">About Us</a>
+            <a href="#about" className="nav-link-item">About</a>
             <a href="#services" className="nav-link-item">Services</a>
           </div>
           <div className="nav-logo-center">
@@ -166,7 +166,7 @@ export default function App() {
                     <ArrowUpRight size={14} />
                   </button>
                   <a
-                    href="/resume.pdf"
+                    href="/Shifa-Shikalgar-Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hero-outline-btn"
@@ -232,7 +232,7 @@ export default function App() {
             <div className="container">
               <div className={`hero-stats-grid reveal ${heroVisible ? 'show' : ''}`} style={{ '--delay': 320 }}>
                 {[
-                  { num: '3+', label: 'Projects Shipped' },
+                  { num: '3+', label: 'Projects Completed' },
                   { num: '9+', label: 'Technologies' },
                   { num: '12', label: 'Services Offered' },
                   { num: '1st', label: 'Class Distinction' },
@@ -320,7 +320,7 @@ export default function App() {
                     Hire Me <ArrowUpRight size={14} />
                   </a>
                   <a
-                    href="/resume.pdf"
+                    href="/Shifa-Shikalgar-Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="ah-cta-link reveal"
