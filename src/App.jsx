@@ -89,10 +89,10 @@ export default function App() {
           <div className="nav-logo-center">
             <span className="logo-spark-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9Z" fill="#b4ff39" />
+                <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9Z" fill="currentColor" />
               </svg>
             </span>
-            <span className="logo-text">Shifa</span>
+            <span className="logo-text">Alshifa</span>
           </div>
           <div className="nav-group-right desktop-only">
             <a href="#work" className="nav-link-item">Projects</a>
@@ -151,7 +151,7 @@ export default function App() {
               <div className={`hero-left-col reveal ${heroVisible ? 'show' : ''}`} style={{ '--delay': 80 }}>
                 <div className="hero-spark-badge">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9Z" fill="#b4ff39" />
+                    <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9Z" fill="var(--lime)" />
                   </svg>
                 </div>
                  <p className="hero-left-text">
@@ -189,7 +189,7 @@ export default function App() {
                   <img
                     className="hero-avatar-image"
                     src="/shifa.png"
-                    alt="Shifa Shikalgar Portrait"
+                    alt="Alshifa Shikalgar Portrait"
                   />
                 </div>
 
@@ -219,7 +219,7 @@ export default function App() {
               <div className={`hero-right-col reveal ${heroVisible ? 'show' : ''}`} style={{ '--delay': 240 }}>
                 <div className="hero-green-stars">★★★★★</div>
                 <div className="hero-right-title">BCS Graduate</div>
-                <div className="hero-right-subtitle">RCS Shahu College</div>
+                <div className="hero-right-subtitle">Rajarshi Chhatrapati Shahu College</div>
                 <div style={{ width: '40px', height: '1.5px', background: '#e4e4e7', margin: '14px 0' }} />
                 <div className="hero-right-title" style={{ fontSize: '1.25rem' }}>MCA Candidate</div>
                 <div className="hero-right-subtitle">Vivekanand College</div>
@@ -268,7 +268,7 @@ export default function App() {
                 <div className="ah-photo-stack">
                   <div className="ah-photo-bg-card" />
                   <div className="ah-photo-frame">
-                    <img src="/shifa.png" alt="Shifa Shikalgar" className="ah-photo" />
+                    <img src="/shifa.png" alt="Alshifa Shikalgar" className="ah-photo" />
                   </div>
                   {/* Floating fact chip */}
                   <div className="ah-chip ah-chip-1">
@@ -295,7 +295,7 @@ export default function App() {
                 </blockquote>
 
                 <p className="ah-body reveal" style={{ '--delay': 160 }}>
-                  I'm Shifa — a BCS graduate from Rajarshi Chhatrapati Shahu College, Kolhapur (completed with first class distinction) and currently pursuing my MCA at Vivekanand College, Kolhapur. Specialize in MEAN Stack development and seeking my first professional IT job to turn raw logic into exceptional production code.
+                  I'm Alshifa — a BCS graduate from Rajarshi Chhatrapati Shahu College, Kolhapur (completed with first class distinction) and currently pursuing my MCA at Vivekanand College, Kolhapur. Specialize in MEAN Stack development and seeking my first professional IT job to turn raw logic into exceptional production code.
                 </p>
 
                 <div className="ah-facts-row reveal" style={{ '--delay': 220 }}>
@@ -379,7 +379,12 @@ export default function App() {
             <div className="pe-grid">
               {/* Card 1 — Portfolio */}
               <div className="pe-card pe-card-wide reveal-scale" style={{ '--delay': 0 }}>
-                <div className="pe-card-color" style={{ background: 'linear-gradient(135deg, #0f0c29, #302b63, #24243e)' }}>
+                <div 
+                  className="pe-card-color" 
+                  style={{ 
+                    backgroundImage: 'linear-gradient(to bottom, rgba(8, 8, 16, 0.2), rgba(8, 8, 16, 0.85)), url("https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80")'
+                  }}
+                >
                   <span className="pe-card-num">01</span>
                   <div className="pe-card-tags-tl">
                     <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
@@ -394,7 +399,12 @@ export default function App() {
 
               {/* Card 2 — Salon */}
               <div className="pe-card reveal-scale" style={{ '--delay': 80 }}>
-                <div className="pe-card-color" style={{ background: 'linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)' }}>
+                <div 
+                  className="pe-card-color" 
+                  style={{ 
+                    backgroundImage: 'linear-gradient(to bottom, rgba(8, 8, 16, 0.2), rgba(8, 8, 16, 0.85)), url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80")'
+                  }}
+                >
                   <span className="pe-card-num">02</span>
                   <div className="pe-card-tags-tl">
                     <span>Java</span><span>JSP</span><span>MySQL</span>
@@ -409,7 +419,12 @@ export default function App() {
 
               {/* Card 3 — Employee */}
               <div className="pe-card reveal-scale" style={{ '--delay': 160 }}>
-                <div className="pe-card-color" style={{ background: 'linear-gradient(135deg, #0d0d0d, #1a1a1a, #2d2d2d)' }}>
+                <div 
+                  className="pe-card-color" 
+                  style={{ 
+                    backgroundImage: 'linear-gradient(to bottom, rgba(8, 8, 16, 0.2), rgba(8, 8, 16, 0.85)), url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80")'
+                  }}
+                >
                   <span className="pe-card-num">03</span>
                   <div className="pe-card-tags-tl">
                     <span>Angular</span><span>Node.js</span><span>MongoDB</span>
@@ -424,7 +439,12 @@ export default function App() {
 
               {/* Card 4 — Design */}
               <div className="pe-card pe-card-wide reveal-scale" style={{ '--delay': 240 }}>
-                <div className="pe-card-color" style={{ background: 'linear-gradient(135deg, #1a0a00, #3d1a00, #7a3b00)' }}>
+                <div 
+                  className="pe-card-color" 
+                  style={{ 
+                    backgroundImage: 'linear-gradient(to bottom, rgba(8, 8, 16, 0.2), rgba(8, 8, 16, 0.85)), url("https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80")'
+                  }}
+                >
                   <span className="pe-card-num">04</span>
                   <div className="pe-card-tags-tl">
                     <span>Figma</span><span>Photoshop</span><span>Blender</span>
@@ -488,13 +508,6 @@ export default function App() {
         <section className="cta-personal-section" id="contact">
           <div className="container">
             <div className="cta-personal-inner">
-              <div className="cta-p-photo-wrap reveal">
-                <img src="/shifa.png" alt="Shifa" className="cta-p-photo" />
-                <div className="cta-p-badge">
-                  <span className="cta-p-dot" />
-                  Available now
-                </div>
-              </div>
               <div className="cta-p-copy reveal" style={{ '--delay': 80 }}>
                 <h2 className="cta-p-heading">
                   Got a project?<br />Let's make it <em>happen</em>.
@@ -532,7 +545,7 @@ export default function App() {
         {/* Giant display name */}
         <div className="flt-display-wrap">
           <div className="flt-display-name">
-            <span className="flt-name-shifa">Shifa</span>
+            <span className="flt-name-shifa">Alshifa</span>
             <span className="flt-name-separator"> · </span>
             <span className="flt-name-shikalgar">Shikalgar</span>
           </div>
@@ -558,7 +571,7 @@ export default function App() {
         {/* Bottom bar */}
         <div className="container">
           <div className="flt-bottom-bar">
-            <span className="flt-copy">© 2026 Shifa Shikalgar — All rights reserved.</span>
+            <span className="flt-copy">© 2026 Alshifa Shikalgar — All rights reserved.</span>
 
             <button
               className="flt-scroll-top"
