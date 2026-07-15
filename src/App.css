@@ -1582,19 +1582,24 @@ img, svg { display: block; }
 .flt-display-wrap {
   padding: 0 clamp(20px, 4vw, 80px);
   margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .flt-display-name {
   font-family: var(--font-display);
-  font-size: clamp(4rem, 12.5vw, 14rem);
+  font-size: clamp(3rem, 10vw, 10rem);
   font-weight: 800;
-  line-height: 0.92;
+  line-height: 1.05;
   letter-spacing: -0.04em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
   gap: 0;
+  width: 100%;
 }
 .flt-name-shifa {
   color: #ffffff;
@@ -1602,7 +1607,7 @@ img, svg { display: block; }
 .flt-name-separator {
   color: var(--lime);
   font-weight: 400;
-  margin: 0 clamp(6px, 1.5vw, 28px);
+  margin: 0 clamp(10px, 2vw, 30px);
   opacity: 0.6;
 }
 .flt-name-shikalgar {
@@ -1615,13 +1620,13 @@ img, svg { display: block; }
 }
 .flt-display-role {
   font-family: var(--font-ui);
-  font-size: clamp(0.8rem, 1.4vw, 1rem);
+  font-size: clamp(0.8rem, 1.4vw, 1.1rem);
   font-weight: 500;
   color: var(--text-muted);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-top: 20px;
-  padding-left: 3px;
+  text-align: center;
 }
 
 /* Divider */

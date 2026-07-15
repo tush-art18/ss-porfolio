@@ -110,7 +110,7 @@ export default function App() {
             </svg>
 
             <h1 className={`hero-creative-headline reveal ${heroVisible ? 'show' : ''}`} style={{ '--delay': 0 }}>
-              Empowering Brands Through Full-Stack Solutions
+              Full-Stack Developer Creating Digital Impact
             </h1>
 
             <div className="hero-grid-row">
@@ -122,7 +122,7 @@ export default function App() {
                   </svg>
                 </div>
                 <p className="hero-left-text">
-                  From databases to front-end architecture, I deliver innovative strategies that elevate your applications and drive growth. Let's build something exceptional together.
+                  Passionate about building scalable software solutions and intuitive web applications using modern technologies. Currently pursuing my MCA and continuously improving through real-world projects.
                 </p>
                 <button
                   className="hero-black-btn"
@@ -160,13 +160,13 @@ export default function App() {
                     className="hero-overlay-btn green"
                     onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   >
-                    Start Project
+                    Hire Me
                   </button>
                   <button
                     className="hero-overlay-btn outline"
                     onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   >
-                    Let's Collaborate
+                    Let's Connect
                   </button>
                 </div>
               </div>
@@ -174,11 +174,11 @@ export default function App() {
               {/* RIGHT COLUMN */}
               <div className={`hero-right-col reveal ${heroVisible ? 'show' : ''}`} style={{ '--delay': 240 }}>
                 <div className="hero-green-stars">★★★★★</div>
-                <div className="hero-right-title">1st Class</div>
-                <div className="hero-right-subtitle">Distinction</div>
+                <div className="hero-right-title">BCS Graduate</div>
+                <div className="hero-right-subtitle">RCS Shahu College</div>
                 <div style={{ width: '40px', height: '1.5px', background: '#e4e4e7', margin: '14px 0' }} />
-                <div className="hero-right-title" style={{ fontSize: '1.4rem' }}>CS Graduate</div>
-                <div className="hero-right-subtitle">MEAN Stack Developer</div>
+                <div className="hero-right-title" style={{ fontSize: '1.25rem' }}>MCA Candidate</div>
+                <div className="hero-right-subtitle">Vivekanand College</div>
               </div>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function App() {
                   {/* Floating fact chip */}
                   <div className="ah-chip ah-chip-1">
                     <span className="ah-chip-icon">🎓</span>
-                    <span>1st Class Distinction</span>
+                    <span>BCS Graduate &amp; MCA Candidate</span>
                   </div>
                   <div className="ah-chip ah-chip-2">
                     <span className="ah-chip-icon">📍</span>
@@ -247,11 +247,11 @@ export default function App() {
                 </h2>
 
                 <blockquote className="ah-quote reveal" style={{ '--delay': 120 }}>
-                  "I didn't just learn to code — I fell in love with building things people can actually use."
+                  "My goal is to secure my first professional IT job and bring value to a development team."
                 </blockquote>
 
                 <p className="ah-body reveal" style={{ '--delay': 160 }}>
-                  I'm Shifa — a CS graduate from Kolhapur with a specialization in MEAN Stack development. I care about writing clean code and designing interfaces that feel intuitive. Whether it's engineering a database schema at midnight or tweaking padding for the third time, I'm in it.
+                  I'm Shifa — a BCS graduate from Rajarshi Chhatrapati Shahu College, Kolhapur (completed with first class distinction) and currently pursuing my MCA at Vivekanand College, Kolhapur. Specialize in MEAN Stack development and seeking my first professional IT job to turn raw logic into exceptional production code.
                 </p>
 
                 <div className="ah-facts-row reveal" style={{ '--delay': 220 }}>
@@ -272,7 +272,7 @@ export default function App() {
                 </div>
 
                 <a href="mailto:shifa@example.com" className="ah-cta-link reveal" style={{ '--delay': 280 }}>
-                  Let's talk <ArrowUpRight size={14} />
+                  Hire Me <ArrowUpRight size={14} />
                 </a>
               </div>
             </div>
