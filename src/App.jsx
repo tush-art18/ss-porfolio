@@ -35,6 +35,7 @@ export default function App() {
   const [navHidden, setNavHidden]     = useState(false)
   const [lastY, setLastY]             = useState(0)
   const [heroVisible, setHeroVisible] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   /* NAV SCROLL BEHAVIOUR */
   useEffect(() => {
@@ -80,8 +81,8 @@ export default function App() {
     <>
       {/* ──────────────── NAV ──────────────── */}
       <div className="nav-pill-container">
-        <header className={`nav-pillbar ${navScrolled ? 'scrolled' : ''} ${navHidden ? 'hidden' : ''}`}>
-          <div className="nav-group-left">
+        <header className={`nav-pillbar ${navScrolled ? 'scrolled' : ''} ${navHidden ? 'hidden' : ''} ${mobileMenuOpen ? 'menu-open' : ''}`}>
+          <div className="nav-group-left desktop-only">
             <a href="#about" className="nav-link-item">About Us</a>
             <a href="#services" className="nav-link-item">Services</a>
           </div>
@@ -93,11 +94,43 @@ export default function App() {
             </span>
             <span className="logo-text">Shifa</span>
           </div>
-          <div className="nav-group-right">
+          <div className="nav-group-right desktop-only">
             <a href="#work" className="nav-link-item">Projects</a>
             <a href="#contact" className="nav-link-item">Contact</a>
           </div>
+          <button 
+            className="nav-hamburger mobile-only" 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`} />
+            <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`} />
+          </button>
         </header>
+      </div>
+
+      {/* Mobile Drawer Overlay */}
+      <div className={`nav-drawer ${mobileMenuOpen ? 'open' : ''}`}>
+        <div className="nav-drawer-content">
+          <nav className="nav-drawer-links">
+            <a href="#about" className="nav-drawer-link" onClick={() => setMobileMenuOpen(false)}>About Us</a>
+            <a href="#services" className="nav-drawer-link" onClick={() => setMobileMenuOpen(false)}>Services</a>
+            <a href="#work" className="nav-drawer-link" onClick={() => setMobileMenuOpen(false)}>Projects</a>
+            <a href="#contact" className="nav-drawer-link" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+          </nav>
+          
+          <div className="nav-drawer-footer">
+            <span className="flt-avail-badge">
+              <span className="flt-avail-dot" />
+              Open to work
+            </span>
+            <div className="nav-drawer-socials">
+              <a href="mailto:shifashikalgar111213@gmail.com" className="nav-drawer-social"><MailIcon /></a>
+              <a href="https://github.com/shifa1112" target="_blank" className="nav-drawer-social"><GithubIcon /></a>
+              <a href="https://www.linkedin.com/in/shifa-shikalgar-49b116349" target="_blank" className="nav-drawer-social"><LinkedinIcon /></a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <main>
@@ -121,16 +154,27 @@ export default function App() {
                     <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9Z" fill="#b4ff39" />
                   </svg>
                 </div>
-                <p className="hero-left-text">
-                  Passionate about building scalable software solutions and intuitive web applications using modern technologies. Currently pursuing my MCA and continuously improving through real-world projects.
+                 <p className="hero-left-text">
+                  I am an aspiring full-stack developer seeking my first professional IT job. Ready to apply my skills in building robust software solutions and intuitive web applications.
                 </p>
-                <button
-                  className="hero-black-btn"
-                  onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  View My Work
-                  <ArrowUpRight size={14} />
-                </button>
+                <div className="hero-button-group">
+                  <button
+                    className="hero-black-btn"
+                    onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    View My Work
+                    <ArrowUpRight size={14} />
+                  </button>
+                  <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hero-outline-btn"
+                  >
+                    View Resume
+                    <ArrowUpRight size={14} />
+                  </a>
+                </div>
               </div>
 
               {/* CENTER COLUMN (Avatar) */}
@@ -271,9 +315,20 @@ export default function App() {
                   </div>
                 </div>
 
-                <a href="mailto:shifa@example.com" className="ah-cta-link reveal" style={{ '--delay': 280 }}>
-                  Hire Me <ArrowUpRight size={14} />
-                </a>
+                <div style={{ display: 'flex', gap: '24px', alignItems: 'center', flexWrap: 'wrap' }}>
+                  <a href="" className="ah-cta-link reveal" style={{ '--delay': 280 }}>
+                    Hire Me <ArrowUpRight size={14} />
+                  </a>
+                  <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ah-cta-link reveal"
+                    style={{ '--delay': 320 }}
+                  >
+                    View Resume <ArrowUpRight size={14} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -448,7 +503,7 @@ export default function App() {
                   Whether you need a full-stack build, a design-to-code conversion, or just want to talk shop — I'm all ears.
                 </p>
                 <div className="cta-p-actions">
-                  <a href="mailto:shifa@example.com" className="cta-p-btn-primary">
+                  <a href="mailto:shifashikalgar111213@gmail.com" className="cta-p-btn-primary">
                     <MailIcon /> Write to me
                   </a>
                   <a href="#work" className="cta-p-btn-ghost">
@@ -482,6 +537,19 @@ export default function App() {
             <span className="flt-name-shikalgar">Shikalgar</span>
           </div>
           <div className="flt-display-role">Full-Stack Engineer &amp; Designer</div>
+          
+          {/* Spotlight contacts links */}
+          <div className="flt-contacts-spotlight">
+            <a href="mailto:shifashikalgar111213@gmail.com" className="flt-spotlight-btn mail">
+              <MailIcon /> shifashikalgar111213@gmail.com
+            </a>
+            <a href="https://github.com/shifa1112" target="_blank" className="flt-spotlight-btn github">
+              <GithubIcon /> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/shifa-shikalgar-49b116349" target="_blank" className="flt-spotlight-btn linkedin">
+              <LinkedinIcon /> LinkedIn
+            </a>
+          </div>
         </div>
 
         {/* Divider */}
@@ -491,18 +559,6 @@ export default function App() {
         <div className="container">
           <div className="flt-bottom-bar">
             <span className="flt-copy">© 2026 Shifa Shikalgar — All rights reserved.</span>
-
-            <div className="flt-social-row">
-              <a href="mailto:shifa@example.com" className="flt-social-link">
-                <MailIcon /> Email
-              </a>
-              <a href="#" className="flt-social-link">
-                <GithubIcon /> GitHub
-              </a>
-              <a href="#" className="flt-social-link">
-                <LinkedinIcon /> LinkedIn
-              </a>
-            </div>
 
             <button
               className="flt-scroll-top"
