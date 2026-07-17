@@ -556,7 +556,7 @@ export default function App() {
         <div className="container">
           <div className="flt-bottom-bar">
             <span className="flt-copy">© 2026 Alshifa Shikalgar — All rights reserved.</span>
-            <p>Design and developed by <a href="https://palasync.vercel.app/" className="text-white text-[16px] font-bold">Pala<span className="text-[#6B3FFF]">Sync</span></a></p>
+        
 
             <button
               className="flt-scroll-top"
